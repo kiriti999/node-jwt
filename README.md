@@ -518,7 +518,15 @@ Here is a preview of testing.
 
 ![Alt Text](https://res.cloudinary.com/gdesigns/image/upload/v1595012581/node-jwt/5.png)
 
-### 10. Conclusion
+### 10. Client side (Angular)
+
+In this, we covered client side implementation using **angular**.
+
+Here is the link of full code for this : https://github.com/kiriti999/angular-jwt.
+
+You can both these projects in parallel to see the request and response flow.
+
+### 11. Conclusion
 
 In this, we covered authentication in nodejs using **express**, **jsonwebtoken** and MongoDB. We learned about how to write middleware.
 
