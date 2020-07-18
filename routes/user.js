@@ -56,11 +56,13 @@ router.post('/login', async (req, res, next) => {
  * @description - Get LoggedIn User
  * @param - /user/me
  */
-router.get('/profile/:id', auth.verify, async (req, res) => {
+router.get('/profile/:id', auth.verify, async (req, res, next) => {
     try {
         // request.user is getting fetched from Middleware after token authentication
         const user = await User.findById(req.params.id);
-        res.json(user);
+        const token = req['token'];
+        const { _id, username, email } = user;
+        token ? res.status(200).json({ _id, username, email, token }) : res.json(user);
     } catch (err) {
         next(err);
     }

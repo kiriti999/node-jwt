@@ -23,12 +23,10 @@ app.listen(PORT, (req, res) => {
 
 // error handler middleware
 app.use((error, req, res, next) => {
-    console.log('middleware error: ', error);
     res.status(error.status || 500).send({
-        error: {
-            status: error.status || 500,
-            message: error.message || '@Internal Server Error'
-        }
+        name: error.name,
+        status: error.status || 500,
+        message: error.message || '@Internal Server Error'
     });
 });
 
