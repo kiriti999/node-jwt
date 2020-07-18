@@ -533,11 +533,11 @@ In this, we covered authentication in nodejs using **express**, **jsonwebtoken**
 Here is the link of full code for this : https://github.com/kiriti999/node-jwt.
 
 Test with postman here:
-Register url: ec2-18-188-66-90.us-east-2.compute.amazonaws.com/user/register
+**Register url**: ec2-18-188-66-90.us-east-2.compute.amazonaws.com/user/register
 ```
 Send data in json format. Example: {"username:"kiriti", email":"kiriti.k999@gmail.com","password":"123456"}
 ```
-Login url: ec2-18-188-66-90.us-east-2.compute.amazonaws.com/user/login
+**Login url**: ec2-18-188-66-90.us-east-2.compute.amazonaws.com/user/login
 ```
 Send data in json format. Example: {"email":"kiriti.k999@gmail.com","password":"123456"}
 ```
