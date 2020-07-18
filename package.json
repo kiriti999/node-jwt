@@ -1,14 +1,14 @@
 {
     "name": "node-jwt",
     "version": "1.0.0",
-    "description": "",
+    "description": "Node JWT",
     "main": "app.js",
     "scripts": {
         "test": "nodemon app.js",
         "start": "pm2 start app.js",
         "stop": "pm2 stop app.js"
     },
-    "author": "",
+    "author": "Kiriti Komaragiri",
     "license": "ISC",
     "dependencies": {
         "bcrypt": "^5.0.0",
@@ -16,7 +16,6 @@
         "body-parser": "^1.19.0",
         "cors": "^2.8.5",
         "express": "^4.17.1",
-        "express-validator": "^6.3.0",
         "http-status-codes": "^1.4.0",
         "jsonwebtoken": "^8.5.1",
         "mongoose": "^5.8.2"
